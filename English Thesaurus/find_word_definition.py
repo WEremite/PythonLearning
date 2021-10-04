@@ -1,3 +1,7 @@
+'''
+    The program should take a word and show its definition.
+'''
+
 import json
 from difflib import get_close_matches
 
@@ -16,7 +20,7 @@ def find_word_definition(word):
 
         count = 1
         for sentence in word_definition:
-            print(f'{count}) {sentence}', "")
+            print('%s) %s' % (count, sentence))
             count += 1
 
     elif len(close_matches) > 0:
